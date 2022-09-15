@@ -1,0 +1,41 @@
+
+#spring:
+#  profiles:
+#    active: dev
+#---
+#spring:
+#  profiles: dev
+#  data.mongodb:
+#    host: localhost
+#    port: 27017
+#    database: tweetappdb
+#---
+#spring.data.mongodb.uri: mongodb://sharath:sharath12345@tweetappsharathdb.cluster-cbzptjglpayg.ap-south-1.docdb.amazonaws.com:27017/tweetappdb?replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false      
+spring.data.mongodb.uri: mongodb://shubham:shubham12345@tweetappdbshubham.cluster-cqfvc6jtrfzm.ap-south-1.docdb.amazonaws.com:27017/tweetappdbshu?replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false
+#spring:
+#  profiles: nonprod
+#spring.data.mongodb.uri: mongodb://localhost:27017/tweetappdb
+
+#---
+#spring:
+#  profiles: prod
+#  data.mongodb:
+#    host: localhost
+#    port: 27017
+#    database: tweetappdb
+#---
+server:
+  port : 5000
+
+#spring:
+#   kafka:
+#     consumer:
+#        bootstrap-servers: localhost:9092
+#        group-id: group_id
+#        auto-offset-reset: earliest
+#        key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#        value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#     producer:
+#        bootstrap-servers: localhost:9092
+#        key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#        value-serializer: org.apache.kafka.common.serialization.StringSerializer
